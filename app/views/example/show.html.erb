@@ -1,0 +1,17 @@
+<%= link_to "Show mah Fancybox!", "#hello", class: "fancybox" %>
+
+<div style="display:none;">
+  <div id="hello">
+  <img src="/assets/fdrfeature1.jpg">
+  </div>
+</div>
+<h1>Example#show</h1>
+<p>Find me in app/views/example/show.html.erb</p>
+
+<script type="text/javascript">
+  jQuery(document).ready(function($) {
+      $(".fancybox").fancybox({
+          padding: 7 // or whatever, 0 = nothing
+      });
+  }); // ready
+</script>
